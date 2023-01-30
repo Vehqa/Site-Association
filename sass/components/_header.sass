@@ -1,20 +1,18 @@
 @use "../utils/_main" as utils
+@use "../utils/_function" as functions
 .header 
     width: 80%
-    display: flex
-    justify-content: space-between
+    @include utils.flex($justify: space-between)
     margin: 0 auto
-    margin-bottom: 50px
-    margin-top: 20px 
+    margin-bottom: functions.pixelToRem(50)
+    margin-top: functions.pixelToRem(20)
 
     &__logo
-        display: flex
-        align-items: center
+        @include utils.flex
         @extend %title-1
 
     &__nav
-        display: flex
-        align-items: center
+        @include utils.flex
         gap: 1em
 
     &__nav__list
@@ -27,6 +25,4 @@
         &:hover
             transform: scale(1.2)
             border-bottom: 1px solid #4BAEA0
-
-    
 

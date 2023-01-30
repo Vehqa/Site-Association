@@ -1,23 +1,21 @@
 @use "../utils/_main" as utils
+@use "../utils/_function" as functions
 .container3
-    padding-top: 40px
+    padding-top: functions.pixelToRem(40)
     &__item
-        display: flex
-        justify-content: space-evenly
+        @include utils.flex($justify: space-evenly)
         flex-wrap: wrap
         height: auto
 
         &__box
-            display: flex
-            flex-direction: column
-            align-items: center
-            width: 350px
+            @include utils.flex($direction: column)
+            width: functions.pixelToRem(350)
             text-align: justify
             border-left: 1px solid transparent
-            padding-left: 15px
+            padding-left: functions.pixelToRem(15)
 
             &__title
-                padding: 15px
+                padding: functions.pixelToRem(15)
                 @extend %paragraphe
 
             &__p

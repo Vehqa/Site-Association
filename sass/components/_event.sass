@@ -1,0 +1,33 @@
+@use "../utils/_main" as utils
+@use "../utils/_function" as functions
+body 
+    height: 100vh
+    @include utils.flex
+    background-color: utils.$alice
+
+.main
+    @include utils.flex
+    text-align: center
+
+    &__text__title
+        @extend %title-2
+        text-transform: uppercase
+        background: linear-gradient(0.25turn, utils.$primary, utils.$secondary,)
+        font-weight: 900
+        background-clip: text
+        color: transparent
+        margin-bottom: functions.pixelToRem(35)
+    
+    &__text__p
+        @extend %paragraphe-4
+        margin-bottom: functions.pixelToRem(15)
+
+    &__text__home
+        @extend %paragraphe
+        &:hover
+            text-decoration: underline
+            color: utils.$primary
+
+    &__decoration__img
+            width: functions.pixelToRem(450)
+            height: functions.pixelToRem(500)

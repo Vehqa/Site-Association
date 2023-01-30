@@ -1,27 +1,26 @@
 @use "../utils/_main" as utils
+@use "../utils/_function" as functions
 .form
     width: 100vw
-    display: flex
-    flex-direction: column
-    justify-content: center
+    @include utils.flex($direction: column)
     align-items: center
     @extend %paragraphe
-    padding-top: 15px
+    padding-top: functions.pixelToRem(15)
 
     &__text
-        margin-bottom: 15px
+        margin-bottom: functions.pixelToRem(15)
         @extend %title-3
 
     &__input
         display: flex
-        gap: 15px
+        gap: functions.pixelToRem(15)
         @extend %paragraphe-4
 
         &__field
-            border-radius: 10px
+            border-radius: functions.pixelToRem(10)
             border: 2px solid darken(utils.$pink, 10%)
-            padding-left: 15px
-            width: 225px
+            padding-left: functions.pixelToRem(15)
+            width: functions.pixelToRem(225)
             &:focus-visible
                 outline: none
                 border: 2px solid lighten(utils.$primary, 15%)

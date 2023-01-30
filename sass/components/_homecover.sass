@@ -1,4 +1,5 @@
 @use "../utils/_main" as utils
+@use "../utils/_function" as functions
 .home
     display: flex
     justify-content: space-between
@@ -7,15 +8,12 @@
     margin: 0 auto
 
     &__bg__img
-        width: 500px
+        width: functions.pixelToRem(500)
         
     &__text
         width: 100%
-        height: 444px
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
+        height: functions.pixelToRem(444)
+        @include utils.flex($direction: column)
     
         &__title
             margin: 10px
@@ -30,15 +28,13 @@
                 font-weight: 600
 
         &__nav
-            display: flex
-            flex-direction: column
-            align-items: center
+            @include utils.flex($direction: column)
             gap: 10px
     
             &__btn
-                font-size: 15px
+                font-size: functions.pixelToRem(15)
                 margin-top: 20px
-                width: 150px
+                width: functions.pixelToRem(150)
                 height: 35px
                 border-radius: 15px
                 border: none

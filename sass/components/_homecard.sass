@@ -1,10 +1,11 @@
 @use "../utils/_main" as utils
+@use "../utils/_function" as functions
 .container2__img
     display: flex
     width: 100%
     padding-top: 2.5rem
     box-sizing: border-box
-    height: 500px
+    height: functions.pixelToRem(500)
 
     &__box 
         flex: 1
@@ -24,7 +25,7 @@
             @extend %paragraphe-4
             line-height: 4rem
             text-align: center
-            height: 100px
+            height: functions.pixelToRem(100)
 
         &:hover  
             flex: 1 1 50% 

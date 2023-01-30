@@ -1,0 +1,125 @@
+.main__text__title {
+  font-family: "Merriweather", serif;
+  font-size: 2.2rem;
+}
+
+.main__text__home {
+  font-family: "Rasa", serif;
+  font-size: 1.2rem;
+}
+
+.main__text__p {
+  font-family: "Merriweather", serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #F0F8FF;
+}
+
+@media screen and (max-width: 1400px) {
+  .action {
+    display: none;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .header {
+    width: 100%;
+  }
+  .home {
+    width: 100%;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .button {
+    bottom: 0;
+    margin: 0;
+  }
+  .home__bg {
+    display: none;
+  }
+  .container4__box {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .header__logo {
+    width: 100%;
+    justify-content: center;
+  }
+  .header__nav {
+    display: none;
+  }
+  .form__input {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .form__input__field {
+    height: 2.3rem;
+  }
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #F0F8FF;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+}
+.main__text__title {
+  text-transform: uppercase;
+  background: linear-gradient(0.25turn, #4BAEA0, #B6E6BD);
+  font-weight: 900;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  margin-bottom: 3rem;
+}
+.main__text__p {
+  margin-bottom: 1rem;
+}
+.main__text__home:hover {
+  text-decoration: underline;
+  color: #4BAEA0;
+}
+.main__decoration__img {
+  width: 29rem;
+  height: 32rem;
+}/*# sourceMappingURL=event.css.map */

@@ -1,19 +1,17 @@
 @use "../utils/_main" as utils
+@use "../utils/_function" as functions
 .container4
-    display: flex
-    justify-content: space-evenly
-    padding-top: 50px
+    @include utils.flex($justify: space-evenly)
+    padding-top: functions.pixelToRem(40)
     flex-wrap: wrap
 
 
     &__box
-        display: flex
-        flex-direction: column
-        align-items: center
+        @include utils.flex($direction: column)
         width: 350px
         text-align: justify
         border-left: 1px solid transparent
-        padding-left: 15px
+        padding-left: functions.pixelToRem(15)
     
         &__img
             &:hover
