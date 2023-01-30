@@ -1,0 +1,29 @@
+@use "../utils/_main" as utils
+.form
+    width: 100vw
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    @extend %paragraphe
+    padding-top: 15px
+
+    &__text
+        margin-bottom: 15px
+        @extend %title-3
+
+    &__input
+        display: flex
+        gap: 15px
+        @extend %paragraphe-4
+
+        &__field
+            border-radius: 10px
+            border: 2px solid darken(utils.$pink, 10%)
+            padding-left: 15px
+            width: 225px
+            &:focus-visible
+                outline: none
+                border: 2px solid lighten(utils.$primary, 15%)
+                box-shadow: 1px 1px 10px lightgrey
+

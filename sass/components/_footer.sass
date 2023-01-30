@@ -1,0 +1,47 @@
+@use "../utils/_main" as utils
+
+.footer
+    width: 100vw
+    margin-top: 40px 
+    background: linear-gradient(0.25turn, utils.$pink, utils.$light-yellow)
+
+    &__logo
+        display: flex
+        align-items: center
+        justify-content: center
+        @extend %title-3
+        padding-top: 30px
+
+    &__text
+        text-align: center
+        padding: 35px 85px
+        text-align: justify
+        text-align: center
+        @extend %paragraphe
+
+        &__quote
+            @extend %paragraphe-3 
+            padding-top: 35px
+
+    &__nav
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &__list
+            display: flex
+            gap: 50px
+            margin-bottom: 15px
+            
+            &__link
+                &:hover
+                    transform: scale(1.1)
+
+    &__right
+        height: 4rem
+        background: linear-gradient(0.65turn, #4BAEA0, #B6E6BD)
+        text-align: center
+        display: flex
+        flex-direction: column
+        justify-content: center
+        @extend %paragraphe

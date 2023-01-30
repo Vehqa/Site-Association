@@ -1,0 +1,32 @@
+@use "../utils/_main" as utils
+.header 
+    width: 80%
+    display: flex
+    justify-content: space-between
+    margin: 0 auto
+    margin-bottom: 50px
+    margin-top: 20px 
+
+    &__logo
+        display: flex
+        align-items: center
+        @extend %title-1
+
+    &__nav
+        display: flex
+        align-items: center
+        gap: 1em
+
+    &__nav__list
+        display: flex
+        cursor: pointer
+        gap: 1.5em
+    
+    &__nav__list__link
+        @extend %navbar
+        &:hover
+            transform: scale(1.2)
+            border-bottom: 1px solid #4BAEA0
+
+    
+

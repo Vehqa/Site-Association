@@ -1,0 +1,24 @@
+@use "../utils/_main" as utils
+.container3
+    padding-top: 40px
+    &__item
+        display: flex
+        justify-content: space-evenly
+        flex-wrap: wrap
+        height: auto
+
+        &__box
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 350px
+            text-align: justify
+            border-left: 1px solid transparent
+            padding-left: 15px
+
+            &__title
+                padding: 15px
+                @extend %paragraphe
+
+            &__p
+                @extend %paragraphe-2

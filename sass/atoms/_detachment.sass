@@ -1,0 +1,23 @@
+@use "../utils/_main" as utils
+.container__split
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    margin-top: 3rem
+
+    &__title
+        @extend %title-2
+    
+    &__hr
+        width: 300px
+        background-color: black
+        margin: 1.5rem
+        border: 1.5px solid utils.$primary
+
+    &__p
+        @extend %paragraphe-4
+
+    &__p2
+        @extend %indication

@@ -1,0 +1,57 @@
+@use "../utils/_main" as utils
+.home
+    display: flex
+    justify-content: space-between
+    background: linear-gradient(0.25turn, #F0C9C9, #F1F0CF)
+    width: 80%
+    margin: 0 auto
+
+    &__bg__img
+        width: 500px
+        
+    &__text
+        width: 100%
+        height: 444px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    
+        &__title
+            margin: 10px
+            @extend %title-2
+
+        &__p
+            @extend %paragraphe
+            text-align: justify
+            text-align: center
+            &__span
+                text-decoration: underline
+                font-weight: 600
+
+        &__nav
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 10px
+    
+            &__btn
+                font-size: 15px
+                margin-top: 20px
+                width: 150px
+                height: 35px
+                border-radius: 15px
+                border: none
+                background:  linear-gradient(0.12turn, utils.$primary, utils.$secondary)
+                cursor: pointer
+                &:hover
+                    box-shadow: 1px 1px 10px grey
+            
+            &__login
+                text-decoration: underline
+                &:hover
+                    transform: scale(1.2)
+                    text-decoration: none
+                    color: utils.$primary
+
+    

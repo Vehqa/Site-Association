@@ -1,0 +1,43 @@
+@use "../utils/_main" as utils
+.button_grey
+        height: 2.5rem
+        width: 150px
+        border-radius: 20px
+        border: none
+        cursor: pointer
+        @extend %paragraphe
+        border: 1px solid lightgrey
+        &:hover
+            box-shadow: 1px 1px 10px
+            border: none
+        &__signup
+            margin-top: 15px 
+
+.button_color
+    height: 2.5rem
+    width: 175px
+    border-radius: 20px
+    @extend %paragraphe
+    border: none
+    cursor: pointer
+    margin-top: 20px
+    background: linear-gradient(0.25turn, #F0C9C9, #F1F0CF)
+    &:hover
+            box-shadow: 1px 1px 10px 
+            border: none
+
+.button_main
+    height: 2.8rem
+    width: 175px
+    border-radius: 25px
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 12px
+    border: none
+    @extend %paragraphe
+    cursor: pointer
+    background: linear-gradient(0.25turn, #4BAEA0, #B6E6BD)
+    &:hover
+        box-shadow: 1px 1px 10px lightgrey
+        border: none
