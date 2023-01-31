@@ -6,6 +6,7 @@ La branch Commit init - dépots des 3 pages principale l'index/ login / signup.h
 
  Dépôt de ReadMe.txt : Branch Main
  Dépôt de evenements.html et son dossiers sass : Branch Main 
+ Dépot du fichier texte de base avec les idée : Branch Update
 
 Schéma:
 
@@ -34,4 +35,6 @@ Schéma:
 		Evenement.html ( Nouvelle page HTML )
 		event.sass ( Son fichier sass/css )
 
-	
+	Dernier commit : 
+		Quelques modification 
+		ajout du fichier texte d'idée de départ.
