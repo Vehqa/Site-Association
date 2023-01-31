@@ -35,6 +35,9 @@ Schéma:
 		Evenement.html ( Nouvelle page HTML )
 		event.sass ( Son fichier sass/css )
 
-	Dernier commit : 
+	Quatrieme commit : 
 		Quelques modification 
 		ajout du fichier texte d'idée de départ.
+	
+	Les derniers commit :
+		certaines correction mineur.
